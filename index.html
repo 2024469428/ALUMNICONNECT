@@ -1,20 +1,131 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Login - Alumni Connect</title>
+<meta charset="UTF-8">
+<title>Alumni Connect Login</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background-color: #d80000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        width: 800px;
+        height: 450px;
+        display: flex;
+        background: #fff;
+    }
+
+    /* LEFT IMAGE */
+    .left {
+        width: 50%;
+        background: url('https://plus.unsplash.com/premium_photo-1713296255442-e9338f42aad8?q=80&w=722&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center;
+        background-size: cover;
+    }
+
+    /* RIGHT LOGIN FORM */
+    .right {
+        width: 50%;
+        padding: 40px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        border-bottom: 2px solid #d80000;
+        display: inline-block;
+        padding-bottom: 5px;
+    }
+
+    label {
+        font-size: 14px;
+        margin-top: 10px;
+        display: block;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: none;
+        background: #eee;
+    }
+
+    .remember {
+        margin-top: 10px;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 12px;
+        margin-top: 20px;
+        background: #d80000;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background: #b00000;
+    }
+
+    .links {
+        margin-top: 15px;
+        font-size: 13px;
+    }
+
+    .links a {
+        text-decoration: none;
+        color: #555;
+        display: block;
+        margin-top: 5px;
+    }
+</style>
 </head>
+
 <body>
-    <h2>Alumni-Connect Login</h2>
-    <form>
-        <label>Email:</label><br>
-        <input type="email" required><br><br>
 
-        <label>Password:</label><br>
-        <input type="password" required><br><br>
+<div class="container">
 
-        <button type="submit">Login</button>
-    </form>
+    <!-- LEFT SIDE IMAGE -->
+    <div class="left"></div>
 
-    <p>Don't have an account? register.html</p>
+    <!-- RIGHT SIDE FORM -->
+    <div class="right">
+        <h2>Login</h2>
+
+        <form>
+            <label>Username *</label>
+            <input type="text" placeholder="Enter your Username" required>
+
+            <label>Password *</label>
+            <input type="password" placeholder="Enter your Password" required>
+
+            <div class="remember">
+                <input type="checkbox"> Remember me
+            </div>
+
+            <button class="btn">LOGIN</button>
+        </form>
+
+        <div class="links">
+            <a href="#">Forgot password?</a>
+            <a href="register.html">Don't have an account?</a>
+        </div>
+    </div>
+
+</div>
+
 </body>
 </html>
