@@ -1,40 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mentorship Management</title>
+<title>Mentorship</title>
+
+<style>
+    body {
+        font-family: Arial;
+        margin: 0;
+        background: #f4f4f4;
+    }
+
+    .header {
+        background: #d80000;
+        color: white;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    table {
+        width: 100%;
+        background: white;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+
+    button {
+        background: #d80000;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        margin: 2px;
+    }
+</style>
 </head>
+
 <body>
+
+<div class="header">
     <h2>Mentorship Slots</h2>
+</div>
 
-    <nav>
-        dashboard.html |
-        ">Logout</a>
-    </nav>
+<div class="container">
 
-    <!-- CREATE -->
-    <h3>Create Slot</h3>
-    <form>
-        <label>Date:</label>
-        <input type="date" required><br><br>
+    <h3>Add Slot</h3>
+    <input type="date">
+    <input type="time">
+    <button>Add</button>
 
-        <label>Time:</label>
-        <input type="time" required><br><br>
+    <h3>Slots List</h3>
 
-        <button>Add Slot</button>
-    </form>
-
-    <!-- READ -->
-    <h3>Available Slots</h3>
-    <table border="1">
+    <table>
         <tr>
             <th>ID</th>
             <th>Date</th>
             <th>Time</th>
-            <th>Actions</th>
+            <th>Action</th>
         </tr>
         <tr>
             <td>1</td>
-            <td>2026-06-01</td>
+            <td>1 June</td>
             <td>10:00 AM</td>
             <td>
                 <button>Edit</button>
@@ -43,6 +75,9 @@
         </tr>
     </table>
 
-    <!-- UPDATE / DELETE simulated -->
+    dashboard.htmlBack</a>
+
+</div>
+
 </body>
 </html>
