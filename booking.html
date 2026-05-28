@@ -1,22 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Book Session</title>
+<title>Booking</title>
+
+<style>
+    body {
+        font-family: Arial;
+        background: #f4f4f4;
+    }
+
+    .container {
+        width: 400px;
+        margin: 100px auto;
+        background: white;
+        padding: 20px;
+    }
+
+    button {
+        background: #d80000;
+        color: white;
+        padding: 10px;
+        border: none;
+        width: 100%;
+    }
+</style>
+
 </head>
 <body>
-    <h2>Book Mentorship Session</h2>
 
-    <form>
-        <label>Select Slot:</label>
-        <select required>
-            <option>Slot 1 - 10:00 AM</option>
-        </select><br><br>
+<div class="container">
+    <h2>Book Session</h2>
 
-        <button>Book</button>
-    </form>
+    <select>
+        <option>Slot 1 - 10AM</option>
+    </select><br><br>
 
-    <h3>Submit Feedback</h3>
-    <textarea placeholder="Write feedback..." required></textarea><br><br>
+    <button>BOOK</button>
+
+    <h3>Feedback</h3>
+    <textarea placeholder="Write feedback..." style="width:100%;"></textarea><br><br>
     <button>Submit</button>
+</div>
+
 </body>
 </html>
