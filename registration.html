@@ -1,28 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Register - Alumni Connect</title>
+<meta charset="UTF-8">
+<title>Register</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial;
+        background: #d80000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        width: 800px;
+        height: 480px;
+        display: flex;
+        background: white;
+    }
+
+    .left {
+        width: 50%;
+        background: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80') no-repeat center;
+        background-size: cover;
+    }
+
+    .right {
+        width: 50%;
+        padding: 30px;
+    }
+
+    h2 {
+        border-bottom: 2px solid #d80000;
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+
+    input, select {
+        width: 100%;
+        padding: 10px;
+        margin-top: 8px;
+        background: #eee;
+        border: none;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 15px;
+        padding: 12px;
+        background: #d80000;
+        color: white;
+        border: none;
+    }
+
+    a {
+        font-size: 13px;
+        display: block;
+        margin-top: 10px;
+    }
+</style>
 </head>
+
 <body>
-    <h2>User Registration</h2>
-    <form>
-        <label>Full Name:</label><br>
-        <input type="text" required><br><br>
 
-        <label>Email:</label><br>
-        <input type="email" required><br><br>
+<div class="container">
+    <div class="left"></div>
 
-        <label>Password:</label><br>
-        <input type="password" required minlength="6"><br><br>
+    <div class="right">
+        <h2>Register</h2>
 
-        <label>User Type:</label><br>
-        <select required>
-            <option value="">Select</option>
-            <option>Student</option>
-            <option>Alumni</option>
-        </select><br><br>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required minlength="6">
 
-        <button type="submit">Register</button>
-    </form>
+            <select required>
+                <option value="">Select Role</option>
+                <option>Student</option>
+                <option>Alumni</option>
+            </select>
+
+            <button>REGISTER</button>
+        </form>
+
+        login.htmlAlready have an account?</a>
+    </div>
+</div>
+
 </body>
 </html>
+``
